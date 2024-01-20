@@ -14,6 +14,7 @@ class SideMenu extends StatelessWidget {
           DrawerHeader(
             child: Image.asset("assets/images/aysis-logo.png"),
           ),
+
           DrawerListTile(
             title: "Dashboard",
             svgSrc: "assets/icons/menu_dashboard.svg",
@@ -29,24 +30,30 @@ class SideMenu extends StatelessWidget {
             svgSrc: "assets/icons/menu_task.svg",
             press: () {},
           ),
+          Padding(
+            padding: EdgeInsets.only(left: 10.0),
+          ),
           DrawerListTile(
-            title: "Task Management",
+            title: "Staff attendance",
             svgSrc: "assets/icons/menu_doc.svg",
             press: () {},
           ),
+          Padding(
+            padding: EdgeInsets.only(left: 50.0),
+          ),
           DrawerListTile(
-            title: "Complains",
+            title: "Track Attendance",
             svgSrc: "assets/icons/menu_store.svg",
             press: () {},
           ),
           DrawerListTile(
-            title: "Reports",
-            svgSrc: "assets/icons/menu_notification.svg",
+            title: "Settings",
+            svgSrc: "assets/icons/settings.svg",
             press: () {},
           ),
           DrawerListTile(
-            title: "SAP Reports",
-            svgSrc: "assets/icons/menu_profile.svg",
+            title: "Log Out",
+            svgSrc: "assets/icons/logout.svg",
             press: () {},
           ),
         ],
@@ -59,6 +66,7 @@ class DrawerListTile extends StatelessWidget {
   const DrawerListTile({
     Key? key,
     // For selecting those three line once press "Command+D"
+
     required this.title,
     required this.svgSrc,
     required this.press,
