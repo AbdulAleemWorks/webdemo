@@ -23,7 +23,7 @@ class _MyTableState extends State<MyTable> {
           return DataCell(
             Container(
               width: 100,
-              padding: EdgeInsets.all(8),
+              padding: EdgeInsets.all(18),
               decoration: BoxDecoration(
                 border: Border(
                   right: BorderSide(
