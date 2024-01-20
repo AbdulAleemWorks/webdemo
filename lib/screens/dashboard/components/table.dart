@@ -13,7 +13,7 @@ class _MyTableState extends State<MyTable> {
   void initState() {
     super.initState();
     // Add an example row
-    //addRow(["Data 1", "Data 2", "Data 3", "Data 4", "Data 5", "Data 6", "Data 7", "Data 8", "Data 9", "Data 10"]);
+    addRow(["Data 1", "Data 2", "Data 3", "Data 4", "Data 5", "Data 6", "Data 7", "Data 8", "Data 9", "Data 10"]);
   }
 
   void addRow(List<String> rowData) {
